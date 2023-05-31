@@ -89,8 +89,8 @@ public class PluginSupport {
                 String main = supportedPlugin.getLoadedPlugin().getDescription().getMain();
 
                 switch (supportedPlugin) {
-                    case FACTIONS_UUID -> {
-                        if (website != null) supportedPlugin.addPlugin(website.equals("https://www.spigotmc.org/resources/factionsuuid.1035/"));
+                    case SABER_FACTIONS -> {
+                        if (website != null) supportedPlugin.addPlugin(website.equals("https://www.spigotmc.org/resources/saberfactions-1-8-1-19-x-discord-gg-saber-the-complete-factions-solution.69771/"));
                     }
 
                     case MCMMO -> {
@@ -125,7 +125,7 @@ public class PluginSupport {
         switch (supportedPlugin) {
             case GRIEF_PREVENTION -> factionsVersion = new GriefPreventionSupport();
             case TOWNYADVANCED -> factionsVersion = new TownySupport();
-            case FACTIONS_UUID -> factionsVersion = new FactionsUUIDSupport();
+            case SABER_FACTIONS -> factionsVersion = new FactionsUUIDSupport();
         }
     }
 
@@ -165,7 +165,8 @@ public class PluginSupport {
         //VULCAN("Vulcan"),
 
         // Faction Plugins
-        FACTIONS_UUID("Factions"),
+        SABER_FACTIONS("Factions"),
+
 
         GRIEF_PREVENTION("GriefPrevention"),
 

@@ -231,7 +231,7 @@ public class ArmorEnchantments implements Listener {
 
             if (damager instanceof Player) {
                 for (ItemStack armor : Objects.requireNonNull(damager.getEquipment()).getArmorContents()) {
-                    if (crazyManager.hasEnchantment(armor, CEnchantments.LEADERSHIP) && CEnchantments.LEADERSHIP.chanceSuccessful(armor) && (PluginSupport.SupportedPlugins.FACTIONS_UUID.isPluginLoaded())) {
+                    if (crazyManager.hasEnchantment(armor, CEnchantments.LEADERSHIP) && CEnchantments.LEADERSHIP.chanceSuccessful(armor) && (SupportedPlugins.SABER_FACTIONS.isPluginLoaded())) {
                         int radius = 4 + crazyManager.getLevel(armor, CEnchantments.LEADERSHIP);
                         int players = 0;
 

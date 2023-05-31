@@ -98,7 +98,7 @@ public class ArmorMoveProcessor extends Processor<PlayerMoveEvent> {
                 });
             }
 
-            if ((CEnchantments.ANGEL.isActivated() && crazyManager.hasEnchantment(armor, CEnchantments.ANGEL) && SupportedPlugins.FACTIONS_UUID.isPluginLoaded())) {
+            if ((CEnchantments.ANGEL.isActivated() && crazyManager.hasEnchantment(armor, CEnchantments.ANGEL) && SupportedPlugins.SABER_FACTIONS.isPluginLoaded())) {
                 final int radius = 4 + crazyManager.getLevel(armor, CEnchantments.ANGEL);
 
                 syncProcessor.add(() -> {

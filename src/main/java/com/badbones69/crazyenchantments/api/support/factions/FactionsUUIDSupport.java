@@ -31,7 +31,7 @@ public class FactionsUUIDSupport implements FactionsVersion {
     }
 
     public boolean canBreakBlock(Player player, Block block) {
-        Faction fBlock = Board.getInstance().getFactionAt(new FLocation(block.getLocation()));
+        Faction fBlock = Board.getInstance().getFactionAt(FLocation.wrap(block.getLocation()));
 
         return isWilderness(fBlock) || FPlayers.getInstance().getByPlayer(player).getFaction() == fBlock;
     }
